@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="with=device-width, initial-scale=1.0">
+    <title>iceglobalresources</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="preconnect" href="https://fonts.gstatic.com">
+    <link rel="https://fonts.googleapis.com/css2? family=poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+<section class="sub-header">
+    <nav>
+        <a href="index.html"><img src="image/ICE_Logo_Complete.png"></a>
+        <div class="nav-links" id="navLinks"> 
+           <i class="fa fa-times" onclick="hideMenu()"></i>
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="Business.html">BUSINESS</a></li>
+                <li><a href="blog.html">BLOG</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+            </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+    </nav>
+    <h1>About Us</h1>  
+</section>
+
+<!------ about us content ------->
+    
+<section class="about-us">
+    
+    <div class="row">
+        <div class="about-col">
+             <h1>Nations Best Dealer</h1>
+             <P>Recognized as the nation's best dealer,We stands out for unmatched expertise, exceptional customer service, and a stellar reputation built on trust and integrity. Our commitment to excellence and innovation makes us the top choice for anyone seeking a premier buying experience.</P>
+             <a href="index.html" class="hero-btn red-btn">EXPLORE NOW</a>
+        </div>
+        <div class="about-col">
+            <img src="image/wp9536407.jpg">
+        </div>
+    </div>
+    
+    
+    </section>
+    
+    
+
+    
+<!------ Footer ------->    
+    
+<section class="footer">
+     <h4>About us</h4>
+     <P>Our company is a luxury brand that offers an exclusive range o high-end cars,fashion and real estate. Known for its impeccable craftmanship and attention to detail,the company provides luxury vehicles that blend performance with style, a clothing line that excudes sophistication and premium properties in top locations worldwide. Catering to a discerning clientele,Our company embodies the pinnacle of luxury living, delivering a seamless experience that integrates the finest in automotive,fashion and real estate.</P>
+       <div class="icons">
+        <i class="fa fa-instagram"></i>
+        <i class="fa fa-snapchat"></i>
+        <i class="fa fa-whatsapp"></i>
+    </div>
+     <p>Made with <i class="fa fa-heart-o"></i> by Taekoff</p>
+    </section>    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+        
+    
+<!------Javascript for Toggle Menu------>    
+<script>
+    
+    var navLinks = document.getElementById("navLinks");
+    
+    function showMenu(){
+        navLinks.style.right = "0";
+    }
+    function hideMenu(){
+        navLinks.style.right = "-200px";
+    }
+    </script> 
+    
+    
+
+</body>
+</html>
