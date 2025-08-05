@@ -1,52 +1,73 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <meta name="viewport" content="with=device-width, initial-scale=1.0">
-    <title>iceglobalresources</title>
-    <link rel="stylesheet" href="style.css">
-    <link href="preconnect" href="https://fonts.gstatic.com">
-    <link rel="https://fonts.googleapis.com/css2? family=poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ICE Global Resources - Luxury Cars, Fashion & Properties</title>
+    
+    <!-- Enhanced Styles -->
+    <link rel="stylesheet" href="enhanced-style.css">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Nunito+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script type="text/javascript"
-        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
-</script>
-
+    
+    <!-- EmailJS -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="ICE Global Resources - Premier destination for luxury cars, fashion, and properties in West Africa. Elevate your lifestyle with our curated selection.">
+    <meta name="keywords" content="luxury cars, fashion, properties, West Africa, ICE Global, premium lifestyle">
+    <meta name="author" content="ICE Global Resources">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="ICE Global Resources - Luxury Lifestyle">
+    <meta property="og:description" content="Elevate Your Lifestyle on the Road, in Fashion and at Home">
+    <meta property="og:image" content="image/ICE_Logo_Complete.png">
+    <meta property="og:type" content="website">
 </head>
 
 <body>
     <section class="header">
         <nav>
-           <a href="index.html"><img src="image/ICE_Logo_Complete.png" ></a>
-            <div class="nav-links" id="navLinks"> 
-                 <i class="fa fa-times" onclick="hideMenu()"></i>
+            <a href="index.html" class="logo-link">
+                <img src="image/ICE_Logo_Complete.png" alt="ICE Global Resources Logo">
+            </a>
+            <div class="nav-links" id="navLinks">
                 <ul>
-                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="index.html" class="active">HOME</a></li>
                     <li><a href="about.html">ABOUT</a></li>
                     <li><a href="Business.html">BUSINESS</a></li>
                     <li><a href="blog.html">BLOG</a></li>
                     <li><a href="contact.html">CONTACT</a></li>
                 </ul>
             </div>
-            <i class="fa fa-bars" onclick="showMenu()"></i>
+            <!-- Mobile menu toggle will be added by JavaScript -->
         </nav>
         
 <div class="text-box">
-      <h1>ICE GLOBAL RESOURCES</h1>
-      <p>Elevate Your Lifestyle on the Road,in Fashion and at Home<br>Introducing the Best Dealer in West Africa that Empowers Your Journey,Your style and Your Home</p>
-      <a href="Business.html" class="hero-btn">Shop With Us</a>
+            <h1>ICE GLOBAL RESOURCES</h1>
+            <p>Elevate Your Lifestyle on the Road, in Fashion and at Home<br>
+            Introducing the Best Dealer in West Africa that Empowers Your Journey, Your Style and Your Home</p>
+            <a href="Business.html" class="btn btn-primary hero-btn">Shop With Us</a>
         </div>        
 
         
         
 </section>
 
-<!------ vision ------>
-    
-<section class="vision">
-        <h1>Our Vision</h1>
-        <p>"Our vision is to become the premier destination for individuals and families seeking to enhance their lives with the finest vehicles, fashion, and properties. We are dedicated to offering a curated selection of high-quality cars that blend performance with elegance, clothing that reflects the latest trends while embracing timeless style, and homes that provide comfort, innovation, and sustainability.
-
-We envision a future where our brand sets the standard for excellence, inspiring trust and loyalty by consistently delivering products that exceed expectations. By integrating luxury, functionality, and a commitment to environmental stewardship into every aspect of our business, we aim to create enduring value and unparalleled experiences for our customers. Our goal is to be not just a brand, but a lifestyle choice that empowers our customers to live their best lives, surrounded by the things that bring them joy and satisfaction."</p>
+<!------ Vision Section ------>
+<section class="vision" id="vision">
+    <div class="container">
+        <h1 class="section-title">Our Vision</h1>
+        <p class="fade-in">"Our vision is to become the premier destination for individuals and families seeking to enhance their lives with the finest vehicles, fashion, and properties. We are dedicated to offering a curated selection of high-quality cars that blend performance with elegance, clothing that reflects the latest trends while embracing timeless style, and homes that provide comfort, innovation, and sustainability.</p>
+        
+        <p class="fade-in">We envision a future where our brand sets the standard for excellence, inspiring trust and loyalty by consistently delivering products that exceed expectations. By integrating luxury, functionality, and a commitment to environmental stewardship into every aspect of our business, we aim to create enduring value and unparalleled experiences for our customers. Our goal is to be not just a brand, but a lifestyle choice that empowers our customers to live their best lives, surrounded by the things that bring them joy and satisfaction."</p>
+    </div>
     
     
     </section>
@@ -120,18 +141,108 @@ We envision a future where our brand sets the standard for excellence, inspiring
     </section>
     
     
-<!-- --- Footer ------->    
-    
-<section class="footer">
-     <h4>About us</h4>
-     <P>Our Company is a luxury brand that offers an exclusive range o high-end cars,fashion and real estate. Known for its impeccable craftmanship and attention to detail,the company provides luxury vehicles that blend performance with style, a clothing line that excudes sophistication and premium properties in top locations worldwide. Catering to a discerning clientele,Our company embodies the pinnacle of luxury living, delivering a seamless experience that integrates the finest in automotive,fashion and real estate.</P>
-       <div class="icons">
-             <i class="fa fa-instagram"></i>
-           <i class="fa fa-snapchat"></i>
-           <i class="fa fa-whatsapp"></i>
+<!-- ===== MODERN FOOTER ===== -->
+<footer class="modern-footer">
+    <div class="container">
+        <!-- Footer Top Section -->
+        <div class="footer-top">
+            <div class="footer-grid">
+                <!-- Company Info -->
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <img src="image/ICE_Logo_Complete.png" alt="ICE Global Resources">
+                        <h3>ICE Global Resources</h3>
+                    </div>
+                    <p class="footer-description">
+                        A luxury brand offering an exclusive range of high-end cars, fashion, and real estate. 
+                        We deliver the pinnacle of luxury living with impeccable craftsmanship and attention to detail.
+                    </p>
+                    <div class="social-links">
+                        <a href="#" class="social-link" aria-label="Instagram">
+                            <i class="fa fa-instagram"></i>
+                        </a>
+                        <a href="#" class="social-link" aria-label="Facebook">
+                            <i class="fa fa-facebook"></i>
+                        </a>
+                        <a href="#" class="social-link" aria-label="Twitter">
+                            <i class="fa fa-twitter"></i>
+                        </a>
+                        <a href="#" class="social-link" aria-label="LinkedIn">
+                            <i class="fa fa-linkedin"></i>
+                        </a>
+                        <a href="#" class="social-link" aria-label="WhatsApp">
+                            <i class="fa fa-whatsapp"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Quick Links -->
+                <div class="footer-section">
+                    <h4 class="footer-title">Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="Business.html">Our Business</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+
+                <!-- Our Services -->
+                <div class="footer-section">
+                    <h4 class="footer-title">Our Services</h4>
+                    <ul class="footer-links">
+                        <li><a href="ice-cars.html">Luxury Cars</a></li>
+                        <li><a href="ice-luxury.html">Fashion & Style</a></li>
+                        <li><a href="ice-property.html">Premium Properties</a></li>
+                        <li><a href="#">Consultation</a></li>
+                        <li><a href="#">After Sales Service</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact Info -->
+                <div class="footer-section">
+                    <h4 class="footer-title">Get In Touch</h4>
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <i class="fa fa-map-marker"></i>
+                            <span>Lagos, Nigeria<br>West Africa</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fa fa-phone"></i>
+                            <span>+234 (0) 123 456 7890</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fa fa-envelope"></i>
+                            <span>info@iceglobalresources.com</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fa fa-clock-o"></i>
+                            <span>Mon - Sat: 9:00 AM - 6:00 PM</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer Bottom Section -->
+        <div class="footer-bottom">
+            <div class="footer-bottom-content">
+                <div class="copyright">
+                    <p>&copy; 2024 ICE Global Resources. All rights reserved.</p>
+                </div>
+                <div class="footer-bottom-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                    <a href="#">Cookie Policy</a>
+                </div>
+                <div class="developer-credit">
+                    <p>Crafted with <i class="fa fa-heart"></i> by <span class="highlight">Taekoff</span></p>
+                </div>
+            </div>
+        </div>
     </div>
-     <p>Made with <i class="fa fa-heart-o"></i> by Taekoff </p>
-    </section>    
+</footer>    
     
     
     
@@ -155,7 +266,18 @@ We envision a future where our brand sets the standard for excellence, inspiring
     function hideMenu(){
         navLinks.style.right = "-200px";
     }
-    </script> 
+</script> 
+
+<!-- Enhanced JavaScript -->
+<script src="enhanced-main.js"></script>
+
+<!-- Legacy EmailJS Integration -->
+<script>
+// EmailJS initialization (if needed)
+if (typeof emailjs !== 'undefined') {
+    emailjs.init('YOUR_PUBLIC_KEY'); // Replace with your actual EmailJS public key
+}
+</script> 
     
     
 
