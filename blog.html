@@ -1,173 +1,156 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <meta name="viewport" content="with=device-width, initial-scale=1.0">
-    <title>iceglobalresources</title>
-    <link rel="stylesheet" href="style.css">
-    <link href="preconnect" href="https://fonts.gstatic.com">
-    <link rel="https://fonts.googleapis.com/css2? family=poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog - ICE Global Resources | Luxury Car News & Updates</title>
+    <!-- Enhanced CSS -->
+    <link rel="stylesheet" href="enhanced-style.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Nunito+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Box icons -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 <body>
-<section class="sub-header">
+<section class="sub-header" style="background: linear-gradient(135deg, var(--deep-navy), rgba(212, 175, 55, 0.1)), url('image/luxury-07.jpg') center/cover; min-height: 50vh; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; position: relative; color: white;">
     <nav>
-        <a href="index.html"><img src="image/ICE_Logo_Complete.png"></a>
+        <a href="index.html" class="logo-link">
+            <img src="image/ICE_Logo_Complete.png" alt="ICE Global Resources Logo">
+        </a>
         <div class="nav-links" id="navLinks"> 
            <i class="fa fa-times" onclick="hideMenu()"></i>
             <ul>
                 <li><a href="index.html">HOME</a></li>
                 <li><a href="about.html">ABOUT</a></li>
                 <li><a href="Business.html">BUSINESS</a></li>
-                <li><a href="blog.html">BLOG</a></li>
+                <li><a href="blog.html" class="active">BLOG</a></li>
                 <li><a href="contact.html">CONTACT</a></li>
             </ul>
         </div>
         <i class="fa fa-bars" onclick="showMenu()"></i>
     </nav>
-    <h1>Blog Page</h1>  
+    <div class="hero-content" style="max-width: 800px; margin: 0 auto; padding: 0 var(--spacing-lg);">
+        <h1 style="font-size: clamp(2.5rem, 6vw, 4rem); font-weight: 700; margin-bottom: var(--spacing-lg); background: var(--gold-gradient); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">Blog & News</h1>
+        <p style="font-size: 1.2rem; line-height: 1.6; color: rgba(255, 255, 255, 0.9); margin-bottom: var(--spacing-xl);">Stay updated with the latest in luxury automotive news, insights, and industry trends</p>
+    </div>
 </section>
 
 <!----- Blog page content ----->
 
-<section class="blog-content" id="blog">
-    <div class="heading">
-       <span>Blog & News</span>
-       <h2>Our Blog content</h2>
-       <p>Giving you Car Enthusiast Daily Updates on the Car World</p> 
-    </div>
-    <!-- Blog Container -->
-     <div class="blog-container container">
-        <!-- Box 1 -->
-         <div class="box">
-            <img src="image/car news 1.jpg" alt="">
-            <span>6 september 2024</span>
-            <h3>Leeds-based Ginetta has unveiled the Akula, a 600bhp road-going supercar with a 6.4-litre atmospheric V8 and a manual gearbox option.</h3>
-            <p>Morphing from the 2019 concept of the same name (meaning 'shark' in Russian), the two-seat coupé has an aggressive exterior design that features Le Mans-derived aero while also offering a Ford Puma-surpassing 473-litre boot.</p> 
-            <a href="https://www.autocar.co.uk/car-news/new-cars/ginetta-reveals-road-legal-supercar-600bhp-v8-and-manual-box" class="btn text-primary px-4 btn-lg rounded-0" style="background: #f44336;">Read More<i class='bx bx-right-arrow-alt'></i></a> 
-         </div>
+<section class="blog-content" id="blog" style="padding: var(--spacing-xxl) 0; background: var(--pearl-white);">
+    <div class="container" style="max-width: 1200px; margin: 0 auto; padding: 0 var(--spacing-lg);">
+        <div class="heading" style="text-align: center; margin-bottom: var(--spacing-xxl);">
+           <span style="color: var(--primary-gold); font-weight: 600; font-size: 1.1rem; letter-spacing: 1px; text-transform: uppercase;">Latest Updates</span>
+           <h2 class="section-title" style="font-size: clamp(2rem, 5vw, 3rem); font-weight: 700; margin: var(--spacing-md) 0; color: var(--deep-navy); position: relative;">Our Blog Content</h2>
+           <p style="font-size: 1.1rem; line-height: 1.8; color: var(--text-dark); max-width: 600px; margin: 0 auto;">Giving you Car Enthusiast Daily Updates on the Car World</p> 
+        </div>
+        <!-- Blog Container -->
+        <div class="blog-container">
+            <!-- Box 1 -->
+            <div class="box">
+                <div class="blog-image">
+                    <img src="image/car news 1.jpg" alt="Ginetta Akula Supercar">
+                </div>
+                <div class="blog-content">
+                    <span class="blog-date">6 September 2024</span>
+                    <h3>Leeds-based Ginetta has unveiled the Akula, a 600bhp road-going supercar with a 6.4-litre atmospheric V8 and a manual gearbox option.</h3>
+                    <p>Morphing from the 2019 concept of the same name (meaning 'shark' in Russian), the two-seat coupé has an aggressive exterior design that features Le Mans-derived aero while also offering a Ford Puma-surpassing 473-litre boot.</p> 
+                    <a href="https://www.autocar.co.uk/car-news/new-cars/ginetta-reveals-road-legal-supercar-600bhp-v8-and-manual-box" class="btn">Read More <i class='bx bx-right-arrow-alt'></i></a>
+                </div>
+            </div>
          <!-- Box 2 -->
          <div class="box">
-            <img src="image/car news 3.webp" alt="">
-            <span>5 september 2024</span>
-            <h3>Half of drivers think a new pair of tyres should go on the car's front wheels, but they're wrong</h3>
-            <p>Up to half of UK drivers – and more worryingly, a significant proportion of the tyre trade – don’t know whether to put new tyres on the front or back of cars, potentially putting themselves and others at risk.</p> 
-            <a href="https://www.autoexpress.co.uk/news/364252/half-drivers-think-new-pair-tyres-should-go-cars-front-wheels-theyre-wrong" class="btn text-primary px-4 btn-lg rounded-0" style="background: #f44336;">Read More<i class='bx bx-right-arrow-alt'></i></a> 
-         </div>
+                <div class="blog-image">
+                    <img src="image/car news 3.webp" alt="Tyre Safety Guide">
+                </div>
+                <div class="blog-content">
+                    <span class="blog-date">5 September 2024</span>
+                    <h3>Half of drivers think a new pair of tyres should go on the car's front wheels, but they're wrong</h3>
+                    <p>Up to half of UK drivers – and more worryingly, a significant proportion of the tyre trade – don't know whether to put new tyres on the front or back of cars, potentially putting themselves and others at risk.</p> 
+                    <a href="https://www.autoexpress.co.uk/news/364252/half-drivers-think-new-pair-tyres-should-go-cars-front-wheels-theyre-wrong" class="btn">Read More <i class='bx bx-right-arrow-alt'></i></a>
+                </div>
+            </div>
          <!-- Box 3 -->
          <div class="box">
-            <img src="image/car news 2.jpg" alt="">
-            <span>5 september 2024</span>
-            <h3>Genesis has given its Electrified G80 saloon a hefty update by extending its wheelbase, adding a larger battery and refreshing its interior.</h3>
-            <p>The revised model will arrive in the UK and other global markets next year, after its initial launch in the brand’s home market of Korea</p> 
-            <a href="https://www.autocar.co.uk/car-news/new-cars/genesis-g80-ev-gets-more-range-more-room-and-chauffeur-mode" class="btn text-primary px-4 btn-lg rounded-0" style="background: #f44336;">Read More<i class='bx bx-right-arrow-alt'></i></a> 
-         </div>
+                <div class="blog-image">
+                    <img src="image/car news 2.jpg" alt="Genesis Electrified G80">
+                </div>
+                <div class="blog-content">
+                    <span class="blog-date">5 September 2024</span>
+                    <h3>Genesis has given its Electrified G80 saloon a hefty update by extending its wheelbase, adding a larger battery and refreshing its interior.</h3>
+                    <p>The revised model will arrive in the UK and other global markets next year, after its initial launch in the brand's home market of Korea</p> 
+                    <a href="https://www.autocar.co.uk/car-news/new-cars/genesis-g80-ev-gets-more-range-more-room-and-chauffeur-mode" class="btn">Read More <i class='bx bx-right-arrow-alt'></i></a>
+                </div>
+            </div>
      </div>
-      <div class="row">
-        <div class="blog-left">
-          <img src="image/blaqhawk.jpg">
-            <h2>The legendary BlaqHawk5.5 Mercedes Benz E550 V8 Engine now up for sale for just 15.8M</h2>
-            <P>The Mercedes-Benz E550 is a popular model within the E-Class lineup, known for its luxury, performance, and the power of its V8 engine. Here are some key facts about the E550 V8 engine</P>
-            <br>
-            <p>Engine Specifications:
-Engine Type: 4.6-liter V8 Twin-Turbocharged
-Power Output: Approximately 402 horsepower (HP) at 5,000-5,750 RPM
-Torque: 443 lb-ft at 1,600-4,750 RPM
-Fuel Injection: Direct fuel injection (DFI) for improved efficiency and power</p>
-            <br>
-            <p>Performance:
-0-60 MPH Time: Around 4.9 seconds, depending on the model year and configuration.
-Top Speed: Electronically limited to 130 MPH (standard in most configurations).
-Transmission: Paired with a 7-speed automatic transmission (7G-Tronic) or later a 9-speed automatic transmission (9G-Tronic)</p>
-            <br>
-            <p>Efficiency:
-Fuel Economy: The E550 V8 averages around 17-18 MPG in the city and 24-26 MPG on the highway, depending on the model year and driving conditions.
-Technology: Incorporates turbocharging, direct injection, and start-stop systems to enhance fuel efficiency without sacrificing performance</p>
-            <br>
-            <p>Models and Variants:
-The E550 V8 engine has been used in various body styles, including the sedan, coupe, and convertible (Cabriolet).
-Available with rear-wheel drive (RWD) or Mercedes' 4MATIC all-wheel-drive (AWD) system, offering versatility in different driving conditions</p>
-            <br>
-            <p>Engineering and Design:
-Aluminum Block and Heads: The engine uses lightweight materials to improve performance and efficiency.
-Turbochargers: Two turbochargers are used to provide a balance of power and responsiveness.
-Cooling System: Features an advanced cooling system to manage the high output of the engine, especially under performance conditions</p>
-            <br>
-            <p>Sound and Exhaust:
-The V8 engine in the E550 is known for its deep, throaty exhaust note, which enhances the overall driving experience</p>
-            <br>
-            <p>Legacy:
-The E550 V8 engine has been praised for its combination of luxury, power, and refinement, making it a favorite among enthusiasts who value performance in a luxury sedan. It’s one of the last V8s offered in the E-Class before the lineup moved towards smaller turbocharged engines and hybrid powertrains</p>
-            
-</div>              
-<div class="blog-right">
-    <h3>Property investments</h3>
-     <p>Property investment offers several key advantages:
-
-It provides steady income through rental payments and positive cash flow. Properties often appreciate in value over time, leading to potential capital gains. Leverage allows you to control a larger asset with borrowed funds, amplifying your returns. Tax benefits, like deductions and deferred capital gains taxes, can enhance profitability. Property values and rents typically rise with inflation, offering a hedge. As a tangible asset, real estate gives you control and stability. It also diversifies your investment portfolio, generating passive income with minimal management. Real estate can be passed down to future generations and can have a positive impact on communities by improving housing and revitalizing neighborhoods. 
-
-These factors make property investment a strong choice for wealth building and financial security.</p>
-  </div>  
-</div>    
-
-<div class="blog-container container">
-    <!-- Box 1 -->
-     <div class="box">
-        <img src="image/house news1.jpg" alt="">
-        <span>13 december 2022</span>
-        <h3>5 Reasons to Get Home Insurance</h3>
-        <p>Many Northern Ireland homeowners can struggle when it comes to deciding if they need home insurance, will it be useful? Is it an expense you</p> 
-        <a href="https://content.propertynews.com/5-reasons-to-get-home-insurance/" class="btn text-primary px-4 btn-lg rounded-0" style="background: #f44336;">Read More<i class='bx bx-right-arrow-alt'></i></a> 
-     </div>
-     <!-- Box 2 -->
-     <div class="box">
-        <img src="image/house new2.jpg" alt="">
-        <span>28 october 2021</span>
-        <h3>Top 5 Million Pound Homes For Sale</h3>
-        <p>We all aspire to living like a millionaire. Have a look at our million pound homes for sale and see which one you would choose!</p> 
-        <a href="https://content.propertynews.com/million-pound-homes-for-sale/" class="btn text-primary px-4 btn-lg rounded-0" style="background: #f44336;">Read More<i class='bx bx-right-arrow-alt'></i></a> 
-     </div>
-     <!-- Box 3 -->
-     <div class="box">
-        <img src="image/Okoya.jpg" alt="">
-        <span>26 april 2023</span>
-        <h3>Inside Billionaire Razaq Okoya's mansion</h3>
-        <p>inside billionaire razaq okoya’s mansion as he celebrates wedding anniversary with wife shade okoya</p> 
-        <a href="https://www.youtube.com/watch?v=wLjaRqa3_Dc" class="btn text-primary px-4 btn-lg rounded-0" style="background: #f44336;">Read More<i class='bx bx-right-arrow-alt'></i></a> 
-     </div>
- </div>
-   
-
-
-
-            <div class="comment-box">
-                <h3>Leave a comment</h3>
-            
-                <form class="comment-form">
-                    <input type="text" placeholder="Enter Name">
-                    <input type="email" placeholder="Enter Email">
-                    <textarea rows="5" placeholder="Your comment"></textarea>
-                    <button type="submit" class="hero-btn red-btn">POST COMMENT</button>
-                </form>       
-            </div> 
-    
-    </section>    
+    </div>
+</section>    
  
     
   
 
 
-<!------ Footer ------->    
-    
-<section class="footer">
-     <h4>About us</h4>
-     <P>Our company is a luxury brand that offers an exclusive range o high-end cars,fashion and real estate. Known for its impeccable craftmanship and attention to detail,the company provides luxury vehicles that blend performance with style, a clothing line that excudes sophistication and premium properties in top locations worldwide. Catering to a discerning clientele,Our company embodies the pinnacle of luxury living, delivering a seamless experience that integrates the finest in automotive,fashion and real estate.</P>
-       <div class="icons">
-        <i class="fa fa-instagram"></i>
-        <i class="fa fa-snapchat"></i>
-        <i class="fa fa-whatsapp"></i>
-       </div>
-     <p>Made with <i class="fa fa-heart-o"></i> by Taekoff</p>
-    </section>    
+<!-- Modern Footer -->
+<footer style="background: var(--deep-navy); color: white; padding: var(--spacing-xxl) 0 var(--spacing-lg); position: relative;">
+   <div class="container" style="max-width: 1200px; margin: 0 auto; padding: 0 var(--spacing-lg);">
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: var(--spacing-xl); margin-bottom: var(--spacing-xl);">
+         <!-- Company Info -->
+         <div>
+            <img src="image/ICE_Logo_Complete.png" alt="ICE Global Resources" style="height: 60px; margin-bottom: var(--spacing-md);">
+            <p style="line-height: 1.6; color: rgba(255, 255, 255, 0.8); margin-bottom: var(--spacing-lg);">ICE Global Resources is a luxury brand offering an exclusive range of high-end cars, fashion, and real estate. We embody the pinnacle of luxury living.</p>
+            <div style="display: flex; gap: var(--spacing-md);">
+               <a href="#" style="color: var(--primary-gold); font-size: 1.5rem; transition: var(--transition-smooth);"><i class="fa fa-instagram"></i></a>
+               <a href="#" style="color: var(--primary-gold); font-size: 1.5rem; transition: var(--transition-smooth);"><i class="fa fa-snapchat"></i></a>
+               <a href="#" style="color: var(--primary-gold); font-size: 1.5rem; transition: var(--transition-smooth);"><i class="fa fa-whatsapp"></i></a>
+            </div>
+         </div>
+         
+         <!-- Quick Links -->
+         <div>
+            <h4 style="color: var(--primary-gold); margin-bottom: var(--spacing-lg); font-size: 1.2rem; font-weight: 600;">Quick Links</h4>
+            <ul style="list-style: none; padding: 0; margin: 0;">
+               <li style="margin-bottom: var(--spacing-sm);"><a href="index.html" style="color: rgba(255, 255, 255, 0.8); text-decoration: none; transition: var(--transition-smooth);">Home</a></li>
+               <li style="margin-bottom: var(--spacing-sm);"><a href="about.html" style="color: rgba(255, 255, 255, 0.8); text-decoration: none; transition: var(--transition-smooth);">About</a></li>
+               <li style="margin-bottom: var(--spacing-sm);"><a href="Business.html" style="color: rgba(255, 255, 255, 0.8); text-decoration: none; transition: var(--transition-smooth);">Business</a></li>
+               <li style="margin-bottom: var(--spacing-sm);"><a href="blog.html" style="color: rgba(255, 255, 255, 0.8); text-decoration: none; transition: var(--transition-smooth);">Blog</a></li>
+               <li style="margin-bottom: var(--spacing-sm);"><a href="contact.html" style="color: rgba(255, 255, 255, 0.8); text-decoration: none; transition: var(--transition-smooth);">Contact</a></li>
+            </ul>
+         </div>
+         
+         <!-- Services -->
+         <div>
+            <h4 style="color: var(--primary-gold); margin-bottom: var(--spacing-lg); font-size: 1.2rem; font-weight: 600;">Our Services</h4>
+            <ul style="list-style: none; padding: 0; margin: 0;">
+               <li style="margin-bottom: var(--spacing-sm);"><a href="ice-cars.html" style="color: rgba(255, 255, 255, 0.8); text-decoration: none; transition: var(--transition-smooth);">Luxury Cars</a></li>
+               <li style="margin-bottom: var(--spacing-sm);"><a href="#" style="color: rgba(255, 255, 255, 0.8); text-decoration: none; transition: var(--transition-smooth);">Real Estate</a></li>
+               <li style="margin-bottom: var(--spacing-sm);"><a href="#" style="color: rgba(255, 255, 255, 0.8); text-decoration: none; transition: var(--transition-smooth);">Fashion</a></li>
+               <li style="margin-bottom: var(--spacing-sm);"><a href="#" style="color: rgba(255, 255, 255, 0.8); text-decoration: none; transition: var(--transition-smooth);">Investment</a></li>
+               <li style="margin-bottom: var(--spacing-sm);"><a href="#" style="color: rgba(255, 255, 255, 0.8); text-decoration: none; transition: var(--transition-smooth);">Consulting</a></li>
+            </ul>
+         </div>
+         
+         <!-- Contact Info -->
+         <div>
+            <h4 style="color: var(--primary-gold); margin-bottom: var(--spacing-lg); font-size: 1.2rem; font-weight: 600;">Contact Info</h4>
+            <div style="color: rgba(255, 255, 255, 0.8); line-height: 1.6;">
+               <p style="margin-bottom: var(--spacing-sm); display: flex; align-items: center; gap: var(--spacing-sm);"><i class="fa fa-map-marker" style="color: var(--primary-gold);"></i> Lagos, Nigeria</p>
+               <p style="margin-bottom: var(--spacing-sm); display: flex; align-items: center; gap: var(--spacing-sm);"><i class="fa fa-phone" style="color: var(--primary-gold);"></i> +234 (0) 123 456 7890</p>
+               <p style="margin-bottom: var(--spacing-sm); display: flex; align-items: center; gap: var(--spacing-sm);"><i class="fa fa-envelope" style="color: var(--primary-gold);"></i> info@iceglobalresources.com</p>
+            </div>
+         </div>
+      </div>
+      
+      <!-- Footer Bottom -->
+      <div style="border-top: 1px solid rgba(255, 255, 255, 0.1); padding-top: var(--spacing-lg); text-align: center;">
+         <p style="color: rgba(255, 255, 255, 0.6); margin: 0;">&copy; 2024 ICE Global Resources. All rights reserved. | Made with <i class="fa fa-heart" style="color: var(--primary-gold);"></i> by Taekoff</p>
+      </div>
+   </div>
+</footer>    
     
     
     
@@ -191,9 +174,8 @@ These factors make property investment a strong choice for wealth building and f
     function hideMenu(){
         navLinks.style.right = "-200px";
     }
-    </script> 
-    
-    
+</script>
+<script src="enhanced-main.js"></script>
 
 </body>
 </html>

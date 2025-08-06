@@ -1366,6 +1366,113 @@ section {
     }
 }
 
+/* ===== BLOG PAGE STYLING ===== */
+.blog-container {
+    display: grid !important;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)) !important;
+    gap: 3rem !important;
+    margin-bottom: 3rem !important;
+}
+
+.blog-container .box {
+    background: white !important;
+    border-radius: 16px !important;
+    overflow: hidden !important;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15) !important;
+    transition: 0.3s ease !important;
+    border: 2px solid transparent !important;
+    position: relative !important;
+    display: block !important;
+    margin-bottom: 2rem !important;
+}
+
+.blog-container .box:hover {
+    transform: translateY(-5px) !important;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2) !important;
+    border-color: #d4af37 !important;
+}
+
+.blog-container .box .blog-image {
+    position: relative !important;
+    overflow: hidden !important;
+}
+
+.blog-container .box .blog-image img {
+    width: 100% !important;
+    height: 250px !important;
+    object-fit: cover !important;
+    transition: 0.3s ease !important;
+}
+
+.blog-container .box:hover .blog-image img {
+    transform: scale(1.05) !important;
+}
+
+.blog-container .box .blog-content {
+    padding: 2rem !important;
+}
+
+.blog-container .box .blog-date {
+    color: #d4af37 !important;
+    font-weight: 600 !important;
+    font-size: 0.9rem !important;
+    text-transform: uppercase !important;
+    letter-spacing: 1px !important;
+}
+
+.blog-container .box h3 {
+    font-size: 1.3rem !important;
+    font-weight: 600 !important;
+    color: #1a1a2e !important;
+    margin: 1.5rem 0 !important;
+    line-height: 1.4 !important;
+}
+
+.blog-container .box p {
+    color: #6c757d !important;
+    line-height: 1.6 !important;
+    margin-bottom: 2rem !important;
+    font-size: 0.95rem !important;
+}
+
+.blog-container .box .btn {
+    background: linear-gradient(135deg, #ffd700, #d4af37, #b8860b) !important;
+    color: white !important;
+    padding: 1rem 2rem !important;
+    border-radius: 12px !important;
+    text-decoration: none !important;
+    font-weight: 600 !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    gap: 0.5rem !important;
+    transition: 0.3s ease !important;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1) !important;
+}
+
+.blog-container .box .btn:hover {
+    transform: translateY(-2px) !important;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15) !important;
+}
+
+/* Mobile responsiveness for blog boxes */
+@media (max-width: 768px) {
+    .blog-container {
+        grid-template-columns: 1fr !important;
+    }
+    
+    .blog-container .box .blog-image img {
+        height: 200px !important;
+    }
+    
+    .blog-container .box h3 {
+        font-size: 1.1rem !important;
+    }
+    
+    .blog-container .box .blog-content {
+        padding: var(--spacing-md) !important;
+    }
+}
+
 /* ===== ICE CARS HEADER STYLING ===== */
 .cars-header {
     background: rgba(33, 37, 41, 0.95);
