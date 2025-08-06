@@ -1469,7 +1469,211 @@ section {
     }
     
     .blog-container .box .blog-content {
-        padding: var(--spacing-md) !important;
+        padding: 1.5rem !important;
+    }
+}
+
+/* ===== CONTACT PAGE MOBILE RESPONSIVENESS ===== */
+@media (max-width: 768px) {
+    /* Header and Navigation */
+    .header {
+        min-height: 50vh !important;
+    }
+    
+    .nav {
+        padding: 1rem 3% !important;
+    }
+    
+    .nav .logo img {
+        height: 40px !important;
+    }
+    
+    .nav-links {
+        position: fixed !important;
+        background: rgba(26, 26, 46, 0.95) !important;
+        height: 100vh !important;
+        width: 200px !important;
+        top: 0 !important;
+        right: -200px !important;
+        text-align: left !important;
+        z-index: 2000 !important;
+        transition: 0.3s ease !important;
+        backdrop-filter: blur(10px) !important;
+    }
+    
+    .nav-links ul {
+        flex-direction: column !important;
+        padding: 4rem 2rem 2rem !important;
+        gap: 1rem !important;
+    }
+    
+    .nav-links ul li a {
+        display: block !important;
+        padding: 1rem !important;
+        font-size: 1.1rem !important;
+        border-radius: 8px !important;
+    }
+    
+    .nav-links .fa-times {
+        display: block !important;
+        color: white !important;
+        font-size: 1.5rem !important;
+        cursor: pointer !important;
+    }
+    
+    #menu-icon {
+        display: block !important;
+    }
+    
+    /* Hero Content */
+    .hero-content {
+        padding: 6rem 3% 3rem !important;
+    }
+    
+    .hero-content h1 {
+        font-size: 2.5rem !important;
+    }
+    
+    .hero-content p {
+        font-size: 1rem !important;
+    }
+    
+    /* Map Section */
+    .map-section {
+        padding: 3rem 0 !important;
+    }
+    
+    .map-section .container {
+        padding: 0 1rem !important;
+    }
+    
+    .map-container {
+        height: 300px !important;
+        margin: 0 1rem !important;
+    }
+    
+    /* Contact Section */
+    .contact-section {
+        padding: 3rem 0 !important;
+    }
+    
+    .contact-section .container {
+        padding: 0 1rem !important;
+    }
+    
+    .contact-grid {
+        grid-template-columns: 1fr !important;
+        gap: 2rem !important;
+    }
+    
+    .contact-item {
+        padding: 1.5rem !important;
+        margin-bottom: 1.5rem !important;
+    }
+    
+    .contact-icon {
+        width: 50px !important;
+        height: 50px !important;
+        font-size: 1.2rem !important;
+    }
+    
+    .contact-details h5 {
+        font-size: 1.1rem !important;
+    }
+    
+    .contact-details p {
+        font-size: 0.9rem !important;
+    }
+    
+    /* Contact Form */
+    .contact-form-container {
+        padding: 2rem 1.5rem !important;
+    }
+    
+    .contact-form-container h3 {
+        font-size: 1.3rem !important;
+    }
+    
+    .form-group input,
+    .form-group textarea {
+        padding: 0.8rem 1rem !important;
+        font-size: 0.9rem !important;
+    }
+    
+    .submit-btn {
+        padding: 0.8rem 1.5rem !important;
+        font-size: 1rem !important;
+    }
+    
+    /* Section Headers */
+    .section-header span {
+        font-size: 1rem !important;
+    }
+    
+    .section-header h2 {
+        font-size: 2rem !important;
+    }
+    
+    /* Footer */
+    footer {
+        padding: 3rem 0 1.5rem !important;
+    }
+    
+    footer .container {
+        padding: 0 1rem !important;
+    }
+    
+    footer div[style*="grid-template-columns"] {
+        grid-template-columns: 1fr !important;
+        gap: 2rem !important;
+        margin-bottom: 2rem !important;
+    }
+    
+    footer h4 {
+        font-size: 1.1rem !important;
+        margin-bottom: 1rem !important;
+    }
+    
+    footer p {
+        font-size: 0.9rem !important;
+        margin-bottom: 0.8rem !important;
+    }
+    
+    footer ul li {
+        margin-bottom: 0.8rem !important;
+    }
+    
+    footer ul li a {
+        font-size: 0.9rem !important;
+    }
+}
+
+/* Extra small devices */
+@media (max-width: 480px) {
+    .nav {
+        padding: 1rem 2% !important;
+    }
+    
+    .hero-content {
+        padding: 5rem 2% 2rem !important;
+    }
+    
+    .hero-content h1 {
+        font-size: 2rem !important;
+    }
+    
+    .contact-item {
+        padding: 1rem !important;
+        flex-direction: column !important;
+        text-align: center !important;
+    }
+    
+    .contact-form-container {
+        padding: 1.5rem 1rem !important;
+    }
+    
+    .map-container {
+        height: 250px !important;
     }
 }
 
