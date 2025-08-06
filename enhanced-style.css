@@ -451,6 +451,11 @@ section {
     transition: var(--transition-smooth);
     box-shadow: var(--shadow-sm);
     border: 1px solid var(--light-gray);
+    min-height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
 }
 
 .Company-col:hover {
@@ -461,23 +466,33 @@ section {
 
 .Company-col img {
     width: 100%;
-    max-width: 200px;
-    height: 150px;
+    max-width: 250px;
+    height: 180px;
     object-fit: cover;
     border-radius: var(--radius-md);
     margin-bottom: var(--spacing-md);
+    display: block;
+    transition: var(--transition-smooth);
+}
+
+.Company-col img:hover {
+    transform: scale(1.05);
 }
 
 .Company-col h3 {
     color: var(--deep-navy);
     margin-bottom: var(--spacing-sm);
-    font-size: 1.3rem;
+    font-size: 1.4rem;
+    font-weight: 600;
 }
 
 .Company-col p {
     color: var(--soft-gray);
     line-height: 1.6;
-    font-size: 0.95rem;
+    font-size: 1rem;
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
 }
 
 /* ===== TESTIMONIALS SECTION ===== */
@@ -894,6 +909,123 @@ section {
     font-size: clamp(2rem, 4vw, 3rem);
 }
 
+/* ===== LEGACY COMPATIBILITY STYLES ===== */
+/* These styles ensure compatibility with any remaining old class names */
+
+.footer {
+    /* Redirect old footer class to modern footer styles */
+    background: var(--charcoal);
+    color: white;
+    padding: var(--spacing-xl) 0;
+    text-align: center;
+}
+
+.footer h4 {
+    color: var(--primary-gold);
+    margin-bottom: var(--spacing-md);
+}
+
+.footer p {
+    opacity: 0.8;
+    margin-bottom: var(--spacing-sm);
+}
+
+.icons {
+    display: flex;
+    justify-content: center;
+    gap: var(--spacing-md);
+    margin: var(--spacing-lg) 0;
+}
+
+.icons .fa {
+    color: var(--primary-gold);
+    font-size: 1.5rem;
+    transition: var(--transition-smooth);
+    cursor: pointer;
+}
+
+.icons .fa:hover {
+    color: var(--accent-gold);
+    transform: scale(1.2);
+}
+
+.vision-col {
+    /* Legacy vision column styles */
+    position: relative;
+    overflow: hidden;
+    border-radius: var(--radius-md);
+    transition: var(--transition-smooth);
+}
+
+.vision-col img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    transition: var(--transition-smooth);
+}
+
+.vision-col:hover img {
+    transform: scale(1.1);
+}
+
+.layer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.7));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: var(--transition-smooth);
+}
+
+.vision-col:hover .layer {
+    opacity: 1;
+}
+
+.layer h3 {
+    color: var(--primary-gold);
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Hero button legacy support */
+.hero-btn {
+    display: inline-block;
+    padding: var(--spacing-sm) var(--spacing-lg);
+    background: var(--gold-gradient);
+    color: white;
+    text-decoration: none;
+    border-radius: var(--radius-md);
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    transition: var(--transition-smooth);
+    box-shadow: var(--shadow-gold);
+}
+
+.hero-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-lg);
+}
+
+/* Business icon styling */
+.business-icon {
+    margin-bottom: var(--spacing-md);
+    text-align: center;
+}
+
+.business-icon i {
+    display: block;
+    margin: 0 auto var(--spacing-md) auto;
+}
+
 /* ===== RESPONSIVE DESIGN ===== */
 
 /* Tablet styles */
@@ -1048,12 +1180,22 @@ section {
 .fade-in {
     opacity: 0;
     transform: translateY(30px);
-    transition: var(--transition-slow);
+    transition: opacity 0.8s ease, transform 0.8s ease;
 }
 
 .fade-in.visible {
     opacity: 1;
     transform: translateY(0);
+}
+
+.fade-in-visible {
+    opacity: 1;
+    transform: translateY(0);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.fade-in-visible:hover {
+    transform: translateY(-5px);
 }
 
 .slide-in-left {
