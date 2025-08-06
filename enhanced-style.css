@@ -1290,3 +1290,282 @@ section {
 .lightbox-close:hover {
     color: var(--primary-gold);
 }
+
+/* ===== CAR BOX STYLING FOR ICE-CARS.HTML ===== */
+.Cars-Container .box {
+    background: white;
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    box-shadow: var(--shadow-md);
+    transition: var(--transition-smooth);
+    border: 2px solid transparent;
+    position: relative;
+    margin-bottom: var(--spacing-lg);
+}
+
+.Cars-Container .box:hover {
+    transform: translateY(-8px);
+    box-shadow: var(--shadow-lg);
+    border-color: var(--primary-gold);
+}
+
+.Cars-Container .box a {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+}
+
+.Cars-Container .box img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    transition: var(--transition-smooth);
+}
+
+.Cars-Container .box:hover img {
+    transform: scale(1.05);
+}
+
+.Cars-Container .box h2 {
+    padding: var(--spacing-lg);
+    margin: 0;
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: var(--deep-navy);
+    text-align: center;
+    background: linear-gradient(135deg, var(--pearl-white), #f8f9fa);
+    border-top: 3px solid var(--primary-gold);
+}
+
+.Cars-Container .box::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(45deg, transparent, rgba(212, 175, 55, 0.1));
+    opacity: 0;
+    transition: var(--transition-smooth);
+    pointer-events: none;
+}
+
+.Cars-Container .box:hover::after {
+    opacity: 1;
+}
+
+/* Mobile responsiveness for car boxes */
+@media (max-width: 768px) {
+    .Cars-Container .box img {
+        height: 200px;
+    }
+    
+    .Cars-Container .box h2 {
+        font-size: 1.1rem;
+        padding: var(--spacing-md);
+    }
+}
+
+/* ===== ICE CARS HEADER STYLING ===== */
+.cars-header {
+    background: rgba(33, 37, 41, 0.95);
+    backdrop-filter: blur(10px);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    transition: var(--transition-smooth);
+}
+
+.cars-header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: var(--spacing-md) var(--spacing-lg);
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.cars-header .logo-text {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: white;
+    text-decoration: none;
+}
+
+.cars-header .logo-accent {
+    color: var(--primary-gold);
+}
+
+.cars-header .nav-links {
+    display: flex;
+    align-items: center;
+}
+
+.cars-header .nav-links ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    gap: var(--spacing-lg);
+}
+
+.cars-header .nav-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    transition: var(--transition-smooth);
+    position: relative;
+    padding: var(--spacing-xs) 0;
+}
+
+.cars-header .nav-links a:hover,
+.cars-header .nav-links a.active {
+    color: var(--primary-gold);
+}
+
+.cars-header .nav-links a::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: var(--primary-gold);
+    transition: var(--transition-smooth);
+}
+
+.cars-header .nav-links a:hover::after,
+.cars-header .nav-links a.active::after {
+    width: 100%;
+}
+
+.cars-header .fa-bars,
+.cars-header .fa-times {
+    display: none;
+    color: white;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.cars-header #Search-icon {
+    color: white;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: var(--transition-smooth);
+    margin-left: var(--spacing-md);
+}
+
+.cars-header #Search-icon:hover {
+    color: var(--primary-gold);
+}
+
+.cars-header .Search-box {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background: white;
+    border-radius: var(--radius-md);
+    box-shadow: var(--shadow-lg);
+    padding: var(--spacing-sm);
+    min-width: 300px;
+    transform: translateY(-10px);
+    opacity: 0;
+    visibility: hidden;
+    transition: var(--transition-smooth);
+}
+
+.cars-header .Search-box.active {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.cars-header .Search-box input {
+    width: 100%;
+    padding: var(--spacing-sm);
+    border: 1px solid var(--light-gray);
+    border-radius: var(--radius-sm);
+    font-family: var(--font-primary);
+    outline: none;
+}
+
+.cars-header .Search-box input:focus {
+    border-color: var(--primary-gold);
+}
+
+/* Hide hamburger menu on desktop */
+.cars-header #menu-icon {
+    display: none;
+}
+
+/* Mobile Navigation for Original Cars Header Structure */
+@media (max-width: 768px) {
+    .cars-header #menu-icon {
+        display: block !important;
+        z-index: 1001;
+    }
+    
+    .cars-header .navbar {
+        position: fixed !important;
+        background: var(--deep-navy) !important;
+        height: 100vh !important;
+        width: 250px !important;
+        top: 0 !important;
+        right: -250px !important;
+        flex-direction: column !important;
+        gap: 0 !important;
+        text-align: left !important;
+        z-index: 1000 !important;
+        transition: right 0.3s ease !important;
+        padding: var(--spacing-xxl) 0 !important;
+        box-shadow: var(--shadow-lg) !important;
+        margin: 0 !important;
+        list-style: none !important;
+    }
+    
+    .cars-header .navbar.active {
+        right: 0 !important;
+    }
+    
+    .cars-header .navbar li {
+        display: block !important;
+        margin: 0 !important;
+        width: 100% !important;
+    }
+    
+    .cars-header .navbar a {
+        display: block !important;
+        padding: var(--spacing-lg) var(--spacing-xl) !important;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1) !important;
+        width: 100% !important;
+        color: white !important;
+        text-decoration: none !important;
+        font-weight: 500 !important;
+        transition: background-color 0.3s ease !important;
+    }
+    
+    .cars-header .navbar a:hover {
+        background-color: rgba(212, 175, 55, 0.1) !important;
+        color: var(--primary-gold) !important;
+    }
+    
+    .cars-header .navbar a.active {
+        color: var(--primary-gold) !important;
+        background-color: rgba(212, 175, 55, 0.1) !important;
+    }
+    
+    .cars-header .Search-box {
+        min-width: 250px !important;
+        right: var(--spacing-md) !important;
+    }
+    
+    .cars-header .nav.container {
+        padding: var(--spacing-sm) var(--spacing-md) !important;
+    }
+    
+    .cars-header .Logo {
+        font-size: 1.5rem !important;
+    }
+}

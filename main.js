@@ -340,11 +340,15 @@ let cars = [
     },
 ]
 
-const carContainer = document.getElementById('cars');
-console.log(carContainer);
-
-
 window.addEventListener('DOMContentLoaded', () => {
+    const carContainer = document.getElementById('cars');
+    console.log('Car container found:', carContainer);
+    
+    if (!carContainer) {
+        console.error('Car container not found!');
+        return;
+    }
+    
     let carsItems = cars.map(car => {
         return `<div class="box">
                <a href=${car.link}>
@@ -355,5 +359,6 @@ window.addEventListener('DOMContentLoaded', () => {
     })
     carsItems = carsItems.join('')
     carContainer.innerHTML = carsItems
+    console.log('Cars loaded:', cars.length);
     
 })
