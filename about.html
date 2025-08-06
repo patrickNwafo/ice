@@ -1,91 +1,197 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-    <meta name="viewport" content="with=device-width, initial-scale=1.0">
-    <title>iceglobalresources</title>
-    <link rel="stylesheet" href="style.css">
-    <link href="preconnect" href="https://fonts.gstatic.com">
-    <link rel="https://fonts.googleapis.com/css2? family=poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - ICE Global Resources</title>
+    <link rel="stylesheet" href="enhanced-style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Nunito+Sans:wght@400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
+
 <body>
-<section class="sub-header">
-    <nav>
-        <a href="index.html"><img src="image/ICE_Logo_Complete.png"></a>
-        <div class="nav-links" id="navLinks"> 
-           <i class="fa fa-times" onclick="hideMenu()"></i>
-            <ul>
-                <li><a href="index.html">HOME</a></li>
-                <li><a href="about.html">ABOUT</a></li>
-                <li><a href="Business.html">BUSINESS</a></li>
-                <li><a href="blog.html">BLOG</a></li>
-                <li><a href="contact.html">CONTACT</a></li>
-            </ul>
-        </div>
-        <i class="fa fa-bars" onclick="showMenu()"></i>
-    </nav>
-    <h1>About Us</h1>  
-</section>
-
-<!------ about us content ------->
-    
-<section class="about-us">
-    
-    <div class="row">
-        <div class="about-col">
-             <h1>Nations Best Dealer</h1>
-             <P>Recognized as the nation's best dealer,We stands out for unmatched expertise, exceptional customer service, and a stellar reputation built on trust and integrity. Our commitment to excellence and innovation makes us the top choice for anyone seeking a premier buying experience.</P>
-             <a href="index.html" class="hero-btn red-btn">EXPLORE NOW</a>
-        </div>
-        <div class="about-col">
-            <img src="image/wp9536407.jpg">
-        </div>
-    </div>
-    
-    
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><img src="image/ICE_Logo_Complete.png"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="Business.html">BUSINESS</a></li>
+                    <li><a href="blog.html">BLOG</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <h1>About Us</h1>
     </section>
-    
-    
 
-    
-<!------ Footer ------->    
-    
-<section class="footer">
-     <h4>About us</h4>
-     <P>Our company is a luxury brand that offers an exclusive range o high-end cars,fashion and real estate. Known for its impeccable craftmanship and attention to detail,the company provides luxury vehicles that blend performance with style, a clothing line that excudes sophistication and premium properties in top locations worldwide. Catering to a discerning clientele,Our company embodies the pinnacle of luxury living, delivering a seamless experience that integrates the finest in automotive,fashion and real estate.</P>
-       <div class="icons">
-        <i class="fa fa-instagram"></i>
-        <i class="fa fa-snapchat"></i>
-        <i class="fa fa-whatsapp"></i>
-    </div>
-     <p>Made with <i class="fa fa-heart-o"></i> by Taekoff</p>
-    </section>    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-        
-    
-<!------Javascript for Toggle Menu------>    
-<script>
-    
-    var navLinks = document.getElementById("navLinks");
-    
-    function showMenu(){
-        navLinks.style.right = "0";
-    }
-    function hideMenu(){
-        navLinks.style.right = "-200px";
-    }
-    </script> 
-    
-    
+    <!------ about us content ------->
+
+    <section class="about-us">
+        <div class="container">
+            <div class="row">
+                <div class="about-col fade-in-visible">
+                    <h1>Nation's Best Luxury Dealer</h1>
+                    <p>Recognized as the nation's premier luxury dealer, ICE Global Resources stands out for unmatched expertise, 
+                    exceptional customer service, and a stellar reputation built on trust and integrity. Our commitment to 
+                    excellence and innovation makes us the top choice for discerning clients seeking a premier luxury experience.</p>
+                    <p>We don't just offer products; we create experiences. From luxury vehicles that blend performance with style, 
+                    to fashion that exudes sophistication, and premium properties in the world's most desirable locations - 
+                    we deliver the pinnacle of luxury living.</p>
+                    <a href="Business.html" class="hero-btn red-btn">EXPLORE OUR SERVICES</a>
+                </div>
+                <div class="about-col fade-in-visible">
+                    <img src="image/Abuja-city-1200x676.jpg" alt="ICE Global Resources Luxury Experience" style="width: 100%; max-width: 500px; height: auto; border-radius: var(--radius-lg); box-shadow: var(--shadow-lg); transition: var(--transition-smooth);">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!------ Our Values Section ------->
+    <section class="Company" style="background: var(--deep-navy); color: white; padding: var(--spacing-xxl) 0;">
+        <div class="container">
+            <h1 class="section-title" style="color: white; text-align: center; margin-bottom: var(--spacing-xl);">Our Core Values</h1>
+            <div class="row">
+                <div class="Company-col fade-in-visible" style="background: rgba(255, 255, 255, 0.05); border: 1px solid rgba(212, 175, 55, 0.2); text-align: center;">
+                    <div style="width: 80px; height: 80px; background: linear-gradient(135deg, var(--primary-gold), var(--accent-gold)); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto var(--spacing-lg) auto; font-size: 2rem; color: var(--deep-navy);">
+                        <i class="fa fa-diamond"></i>
+                    </div>
+                    <h3 style="color: var(--primary-gold); margin-bottom: var(--spacing-md);">Excellence</h3>
+                    <p style="color: rgba(255, 255, 255, 0.8);">We maintain the highest standards in everything we do, from product selection to customer service.</p>
+                </div>
+                <div class="Company-col fade-in-visible" style="background: rgba(255, 255, 255, 0.05); border: 1px solid rgba(212, 175, 55, 0.2); text-align: center;">
+                    <div style="width: 80px; height: 80px; background: linear-gradient(135deg, var(--primary-gold), var(--accent-gold)); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto var(--spacing-lg) auto; font-size: 2rem; color: var(--deep-navy);">
+                        <i class="fa fa-shield"></i>
+                    </div>
+                    <h3 style="color: var(--primary-gold); margin-bottom: var(--spacing-md);">Trust</h3>
+                    <p style="color: rgba(255, 255, 255, 0.8);">Built on integrity and transparency, we've earned our reputation through honest business practices.</p>
+                </div>
+                <div class="Company-col fade-in-visible" style="background: rgba(255, 255, 255, 0.05); border: 1px solid rgba(212, 175, 55, 0.2); text-align: center;">
+                    <div style="width: 80px; height: 80px; background: linear-gradient(135deg, var(--primary-gold), var(--accent-gold)); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto var(--spacing-lg) auto; font-size: 2rem; color: var(--deep-navy);">
+                        <i class="fa fa-star"></i>
+                    </div>
+                    <h3 style="color: var(--primary-gold); margin-bottom: var(--spacing-md);">Innovation</h3>
+                    <p style="color: rgba(255, 255, 255, 0.8);">We continuously evolve to meet the changing needs of our luxury clientele with cutting-edge solutions.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!------ Modern Footer ------->
+    <footer class="modern-footer">
+        <div class="container">
+            <!-- Footer Top Section -->
+            <div class="footer-top">
+                <div class="footer-grid">
+                    <!-- Company Info -->
+                    <div class="footer-section">
+                        <div class="footer-logo">
+                            <img src="image/ICE_Logo_Complete.png" alt="ICE Global Resources">
+                            <h3>ICE Global Resources</h3>
+                        </div>
+                        <p class="footer-description">
+                            A luxury brand offering an exclusive range of high-end cars, fashion, and real estate. 
+                            We deliver the pinnacle of luxury living with impeccable craftsmanship and attention to detail.
+                        </p>
+                        <div class="social-links">
+                            <a href="#" class="social-link" aria-label="Instagram"><i class="fa fa-instagram"></i></a>
+                            <a href="#" class="social-link" aria-label="Facebook"><i class="fa fa-facebook"></i></a>
+                            <a href="#" class="social-link" aria-label="Twitter"><i class="fa fa-twitter"></i></a>
+                            <a href="#" class="social-link" aria-label="LinkedIn"><i class="fa fa-linkedin"></i></a>
+                            <a href="#" class="social-link" aria-label="WhatsApp"><i class="fa fa-whatsapp"></i></a>
+                        </div>
+                    </div>
+                    
+                    <!-- Quick Links -->
+                    <div class="footer-section">
+                        <h4>Quick Links</h4>
+                        <ul class="footer-links">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="about.html">About Us</a></li>
+                            <li><a href="Business.html">Our Business</a></li>
+                            <li><a href="blog.html">Blog</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                    </div>
+                    
+                    <!-- Our Services -->
+                    <div class="footer-section">
+                        <h4>Our Services</h4>
+                        <ul class="footer-links">
+                            <li><a href="ice-cars.html">Luxury Cars</a></li>
+                            <li><a href="ice-luxury.html">Fashion & Style</a></li>
+                            <li><a href="ice-property.html">Premium Properties</a></li>
+                            <li><a href="#">Consultation</a></li>
+                            <li><a href="#">After Sales Service</a></li>
+                        </ul>
+                    </div>
+                    
+                    <!-- Get In Touch -->
+                    <div class="footer-section">
+                        <h4>Get In Touch</h4>
+                        <div class="contact-info">
+                            <div class="contact-item">
+                                <i class="fa fa-map-marker"></i>
+                                <span>Lagos, Nigeria<br>West Africa</span>
+                            </div>
+                            <div class="contact-item">
+                                <i class="fa fa-phone"></i>
+                                <span>+234 (0) 123 456 7890</span>
+                            </div>
+                            <div class="contact-item">
+                                <i class="fa fa-envelope"></i>
+                                <span>info@iceglobalresources.com</span>
+                            </div>
+                            <div class="contact-item">
+                                <i class="fa fa-clock-o"></i>
+                                <span>Mon - Sat: 9:00 AM - 6:00 PM</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Footer Bottom Section -->
+            <div class="footer-bottom">
+                <div class="footer-bottom-content">
+                    <div class="copyright">
+                        <p>&copy; 2024 ICE Global Resources. All rights reserved.</p>
+                    </div>
+                    <div class="footer-bottom-links">
+                        <a href="#">Privacy Policy</a>
+                        <a href="#">Terms of Service</a>
+                        <a href="#">Cookie Policy</a>
+                    </div>
+                    <div class="developer-credit">
+                        <p>Crafted with <i class="fa fa-heart"></i> by <span class="highlight">Taekoff</span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- ===== ENHANCED JAVASCRIPT ===== -->
+    <script src="enhanced-main.js"></script>
+
+
 
 </body>
+
 </html>
