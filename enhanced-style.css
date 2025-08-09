@@ -1072,6 +1072,19 @@ section {
     margin-bottom: var(--spacing-md);
 }
 
+.footer-logo img {
+    height: 300px;
+    width: auto;
+    margin-bottom: var(--spacing-sm);
+    filter: brightness(1.1) contrast(1.1);
+    transition: all 0.3s ease;
+}
+
+.footer-logo:hover img {
+    filter: brightness(1.2) contrast(1.2);
+    transform: scale(1.05);
+}
+
 .footer p {
     opacity: 0.8;
     margin-bottom: var(--spacing-sm);
