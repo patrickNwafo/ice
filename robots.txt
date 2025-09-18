@@ -1,0 +1,27 @@
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://iceglobalresources.com/sitemap.xml
+
+# Optimize crawling
+Crawl-delay: 1
+
+# Block unnecessary files
+Disallow: /enhanced-main.js
+Disallow: /performance-optimizer.js
+Disallow: /*.css$
+Disallow: /*.js$
+
+# Allow important pages
+Allow: /index.html
+Allow: /about.html
+Allow: /Business.html
+Allow: /contact.html
+Allow: /blog.html
+Allow: /ice-cars.html
+Allow: /ice-luxury.html
+Allow: /ice-property.html
+
+# Allow images
+Allow: /image/

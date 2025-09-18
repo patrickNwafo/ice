@@ -1,6 +1,44 @@
 /* ===== ICE GLOBAL RESOURCES - ENHANCED STYLES ===== */
 /* Mobile-First Responsive Design with Gold Theme */
 
+/* ===== PERFORMANCE OPTIMIZATIONS ===== */
+/* Lazy Loading Styles */
+.lazy-loading {
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
+    background-size: 200% 100%;
+    animation: loading-shimmer 1.5s infinite;
+}
+
+.lazy-loaded {
+    opacity: 1;
+}
+
+@keyframes loading-shimmer {
+    0% { background-position: -200% 0; }
+    100% { background-position: 200% 0; }
+}
+
+/* Optimize images for performance */
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Video optimization */
+video {
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+/* Preload critical resources */
+.critical-resource {
+    font-display: swap;
+}
+
 /* ===== CSS VARIABLES ===== */
 :root {
     /* Gold Color Palette */
