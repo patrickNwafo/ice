@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instagram Gallery - ICE Global Resources | Follow Our Luxury Lifestyle</title>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="shortcut icon" type="image/png" href="favicon.png">
+    <link rel="apple-touch-icon" href="image/lolo1.png">
+
+    <!-- Enhanced Styles -->
+    <link rel="stylesheet" href="enhanced-style.css">
+    
+    <!-- Instagram Integration Styles -->
+    <link rel="stylesheet" href="instagram-styles.css">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Nunito+Sans:wght@400;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- Enhanced SEO Meta Tags -->
+    <meta name="description"
+        content="Follow ICE Global Resources on Instagram. Latest luxury cars, high-end fashion, and premium properties in Nigeria. @ice_cars_, @ice_luxury___, @ice_properties_">
+    <meta name="keywords" content="ICE Global Instagram, luxury cars Nigeria Instagram, high-end fashion Abuja Instagram, premium properties Nigeria social media, ICE Global social media">
+    <meta name="robots" content="index, follow">
+
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Instagram Gallery - ICE Global Resources">
+    <meta property="og:description" content="Follow our luxury lifestyle journey on Instagram. Cars, fashion, and properties in Nigeria">
+    <meta property="og:image" content="image/lolo1.png">
+    <meta property="og:type" content="website">
+
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        "name": "Instagram Gallery - ICE Global Resources",
+        "description": "Social media gallery showcasing luxury cars, fashion, and properties",
+        "publisher": {
+            "@type": "Organization",
+            "name": "ICE Global Resources",
+            "sameAs": [
+                "https://www.instagram.com/ice_cars_/",
+                "https://www.instagram.com/ice_luxury___/",
+                "https://www.instagram.com/ice_properties_/"
+            ]
+        }
+    }
+    </script>
+</head>
+
+<body>
+    <!-- Navigation -->
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><img src="image/lolo1.png" alt="ICE Global Resources Logo"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="Business.html">BUSINESS</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                    <li><a href="instagram-gallery.html" class="active">INSTAGRAM</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+
+        <!-- Hero Section -->
+        <div class="hero-content">
+            <h1 class="hero-title">Follow Our Journey</h1>
+            <p class="hero-subtitle">Connect with ICE Global Resources on Instagram</p>
+        </div>
+    </section>
+
+    <!-- Instagram Gallery Page -->
+    <section class="instagram-gallery-page">
+        <div class="container" style="max-width: 1200px; margin: 0 auto; padding: 0 var(--spacing-lg);">
+            
+            <!-- Page Header -->
+            <div class="instagram-section-header">
+                <span class="instagram-section-subtitle">Social Media</span>
+                <h2 class="instagram-section-title">Our Instagram Feeds</h2>
+                <p class="instagram-section-description">
+                    Stay connected with our luxury lifestyle brands. Follow our journey through cars, fashion, and properties.
+                    Get the latest updates, behind-the-scenes content, and exclusive previews.
+                </p>
+            </div>
+
+            <!-- Account Tabs -->
+            <div class="instagram-accounts-tabs">
+                <button class="instagram-tab active" data-account="all" onclick="showAllFeeds()">
+                    <i class="fa fa-th"></i>
+                    All Feeds
+                </button>
+                <button class="instagram-tab" data-account="cars" onclick="showAccountFeed('cars')">
+                    <i class="fa fa-car"></i>
+                    ICE Cars
+                </button>
+                <button class="instagram-tab" data-account="luxury" onclick="showAccountFeed('luxury')">
+                    <i class="fa fa-diamond"></i>
+                    ICE Luxury
+                </button>
+                <button class="instagram-tab" data-account="properties" onclick="showAccountFeed('properties')">
+                    <i class="fa fa-building"></i>
+                    ICE Properties
+                </button>
+            </div>
+
+            <!-- All Feeds View -->
+            <div id="all-feeds-container" class="feeds-container">
+                
+                <!-- ICE Cars Feed -->
+                <div class="account-feed-section" data-account="cars">
+                    <div class="instagram-section-header">
+                        <h3 class="instagram-section-title">
+                            <i class="fa fa-car" style="color: var(--primary-gold); margin-right: var(--spacing-sm);"></i>
+                            ICE Cars
+                        </h3>
+                        <p class="instagram-section-description">
+                            Luxury vehicles that define excellence and status.
+                        </p>
+                    </div>
+                    <div id="instagram-cars-feed" class="instagram-feed-container">
+                        <!-- Instagram posts will be loaded here -->
+                    </div>
+                </div>
+
+                <!-- ICE Luxury Feed -->
+                <div class="account-feed-section" data-account="luxury">
+                    <div class="instagram-section-header">
+                        <h3 class="instagram-section-title">
+                            <i class="fa fa-diamond" style="color: var(--primary-gold); margin-right: var(--spacing-sm);"></i>
+                            ICE Luxury
+                        </h3>
+                        <p class="instagram-section-description">
+                            High-end fashion and accessories for the discerning individual.
+                        </p>
+                    </div>
+                    <div id="instagram-luxury-feed" class="instagram-feed-container">
+                        <!-- Instagram posts will be loaded here -->
+                    </div>
+                </div>
+
+                <!-- ICE Properties Feed -->
+                <div class="account-feed-section" data-account="properties">
+                    <div class="instagram-section-header">
+                        <h3 class="instagram-section-title">
+                            <i class="fa fa-building" style="color: var(--primary-gold); margin-right: var(--spacing-sm);"></i>
+                            ICE Properties
+                        </h3>
+                        <p class="instagram-section-description">
+                            Premium real estate and luxury living spaces.
+                        </p>
+                    </div>
+                    <div id="instagram-properties-feed" class="instagram-feed-container">
+                        <!-- Instagram posts will be loaded here -->
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Call to Action Section -->
+            <div class="instagram-cta-section" style="text-align: center; margin-top: var(--spacing-xxl); padding: var(--spacing-xxl); background: linear-gradient(135deg, var(--deep-navy), rgba(212, 175, 55, 0.1)); border-radius: var(--radius-lg); color: white;">
+                <h3 style="font-size: 2rem; font-weight: 700; margin-bottom: var(--spacing-lg); color: var(--primary-gold);">
+                    Join Our Community
+                </h3>
+                <p style="font-size: 1.1rem; line-height: 1.8; margin-bottom: var(--spacing-xl); max-width: 600px; margin-left: auto; margin-right: auto;">
+                    Follow us on Instagram for exclusive content, behind-the-scenes moments, and first access to our latest luxury offerings.
+                </p>
+                <div class="social-follow-buttons" style="display: flex; gap: var(--spacing-lg); justify-content: center; flex-wrap: wrap;">
+                    <a href="https://www.instagram.com/ice_cars_/" target="_blank" rel="noopener noreferrer" class="instagram-follow-button">
+                        <i class="fa fa-instagram"></i> Follow @ice_cars_
+                    </a>
+                    <a href="https://www.instagram.com/ice_luxury___/" target="_blank" rel="noopener noreferrer" class="instagram-follow-button">
+                        <i class="fa fa-instagram"></i> Follow @ice_luxury___
+                    </a>
+                    <a href="https://www.instagram.com/ice_properties_/" target="_blank" rel="noopener noreferrer" class="instagram-follow-button">
+                        <i class="fa fa-instagram"></i> Follow @ice_properties_
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ===== MODERN FOOTER ===== -->
+    <footer class="modern-footer">
+        <div class="container">
+            <!-- Footer Top Section -->
+            <div class="footer-top">
+                <div class="footer-grid">
+                    <!-- ICE Global Info -->
+                    <div class="footer-section">
+                        <div class="footer-logo">
+                            <img src="image/lolo1.png" alt="ICE Global Resources" style="height: 40px; margin-bottom: var(--spacing-md);">
+                            <h3>ICE Global Resources</h3>
+                        </div>
+                        <p class="footer-description">Nigeria's premier luxury lifestyle brand offering exotic cars, high-end fashion, and premium properties.</p>
+                        <div class="social-links">
+                            <a href="https://www.instagram.com/ice_cars_/" class="social-link" aria-label="ICE Cars Instagram">
+                                <i class="fa fa-instagram"></i>
+                            </a>
+                            <a href="https://www.instagram.com/ice_luxury___/" class="social-link" aria-label="ICE Luxury Instagram">
+                                <i class="fa fa-instagram"></i>
+                            </a>
+                            <a href="https://www.instagram.com/ice_properties_/" class="social-link" aria-label="ICE Properties Instagram">
+                                <i class="fa fa-instagram"></i>
+                            </a>
+                            <a href="https://wa.me/2348103559971" class="social-link" aria-label="WhatsApp">
+                                <i class="fa fa-whatsapp"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Quick Links -->
+                    <div class="footer-section">
+                        <h4 class="footer-title">Quick Links</h4>
+                        <ul class="footer-links">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="about.html">About Us</a></li>
+                            <li><a href="Business.html">Our Business</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                            <li><a href="instagram-gallery.html">Instagram Gallery</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Our Services -->
+                    <div class="footer-section">
+                        <h4 class="footer-title">Our Services</h4>
+                        <ul class="footer-links">
+                            <li><a href="ice-cars.html">Luxury Cars</a></li>
+                            <li><a href="#">Fashion & Style</a></li>
+                            <li><a href="#">Premium Properties</a></li>
+                            <li><a href="#">Consultation</a></li>
+                            <li><a href="#">After Sales Service</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Contact Info -->
+                    <div class="footer-section">
+                        <h4 class="footer-title">Get In Touch</h4>
+                        <div class="contact-info">
+                            <div class="contact-item">
+                                <i class="fa fa-map-marker"></i>
+                                <span>Abuja, Nigeria<br>Jesse Jackson str 296 Asokoro</span>
+                            </div>
+                            <div class="contact-item">
+                                <i class="fa fa-phone"></i>
+                                <span>+234-8103559971</span>
+                            </div>
+                            <div class="contact-item">
+                                <i class="fa fa-envelope"></i>
+                                <span>info@iceglobalresources.com</span>
+                            </div>
+                            <div class="contact-item">
+                                <i class="fa fa-clock-o"></i>
+                                <span>Mon - Sat: 9:00 AM - 6:00 PM</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Footer Bottom Section -->
+            <div class="footer-bottom">
+                <div class="footer-bottom-content">
+                    <div class="copyright">
+                        <p>&copy; 2024 ICE Global Resources. All rights reserved.</p>
+                    </div>
+                    <div class="developer-credit">
+                        <p>Crafted with <i class="fa fa-heart" style="color: var(--primary-gold);"></i> by <span style="color: var(--primary-gold);">Taekoff</span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!------Javascript for Toggle Menu------>
+    <script>
+        var navLinks = document.getElementById("navLinks");
+        
+        function showMenu() {
+            navLinks.style.right = "0";
+        }
+        function hideMenu() {
+            navLinks.style.right = "-200px";
+        }
+
+        // Instagram Gallery Tab Functionality
+        function showAllFeeds() {
+            // Update active tab
+            document.querySelectorAll('.instagram-tab').forEach(tab => {
+                tab.classList.remove('active');
+            });
+            document.querySelector('[data-account="all"]').classList.add('active');
+
+            // Show all feed sections
+            document.querySelectorAll('.account-feed-section').forEach(section => {
+                section.style.display = 'block';
+            });
+        }
+
+        function showAccountFeed(accountType) {
+            // Update active tab
+            document.querySelectorAll('.instagram-tab').forEach(tab => {
+                tab.classList.remove('active');
+            });
+            document.querySelector(`[data-account="${accountType}"]`).classList.add('active');
+
+            // Hide all feed sections
+            document.querySelectorAll('.account-feed-section').forEach(section => {
+                section.style.display = 'none';
+            });
+
+            // Show selected feed section
+            document.querySelector(`.account-feed-section[data-account="${accountType}"]`).style.display = 'block';
+        }
+    </script>
+
+    <!-- Performance Optimizer -->
+    <script src="performance-optimizer.js"></script>
+
+    <!-- Enhanced JavaScript -->
+    <script src="enhanced-main.js"></script>
+
+    <!-- Instagram Integration -->
+    <script src="instagram-integration.js"></script>
+
+</body>
+
+</html>
